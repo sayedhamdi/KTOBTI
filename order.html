@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Ktobti</title>
+  <title>Plato - Clean responsive bootstrap website template</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Clean responsive bootstrap website template">
   <meta name="author" content="">
@@ -13,7 +13,6 @@
   <link href="assets/css/docs.css" rel="stylesheet">
   <link href="assets/css/prettyPhoto.css" rel="stylesheet">
   <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
-  <link href="assets/css/prettyPhoto.css" rel="stylesheet">
   <link href="assets/css/flexslider.css" rel="stylesheet">
   <link href="assets/css/refineslide.css" rel="stylesheet">
   <link href="assets/css/font-awesome.css" rel="stylesheet">
@@ -46,7 +45,6 @@
       <div class=" cbp-af-inner">
         <div class="container">
           <div class="row">
-
             <div class="span4">
               <!-- logo -->
               <div class="logo">
@@ -62,11 +60,14 @@
                 <div class="navbar-inner">
                   <nav>
                     <ul class="nav topnav">
-                      <li class="dropdown ">
+                      <li class="dropdown active">
                         <a href="index.html">Home</a>
                       </li>
-                      <li class="dropdown active">
-                        <a href="pricingtable.html">Packs</a>
+                      <li class="dropdown">
+                        <a href="pricingtable.html">Products</a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="about.html">About us</a>
                       </li>
                       <li class="dropdown">
                         <a href="contact.html">Contact us</a>
@@ -84,81 +85,26 @@
       </div>
     </div>
   </header>
-
-  <section id="subintro">
+  <section id="intro">
 
     <div class="container">
-      <div class="row">
-        <div class="span4">
-          <h3>Pricing <strong>boxes</strong></h3>
+      <form class="" action="index.html" method="post">
+        <center>
+        Nombre de Pack : <input id="packNumber" type="number" name="packNumber" value="" min="1" max="5">
+        <div id="element" >
+            <h3>Choisir votre Pack</h3>
+            <select class="packType" name="">
+              <option value="1">Pack1</option>
+              <option value="2">Pack2</option>
+              <option value="3">Pack3</option>
+            </select>
         </div>
-        <div class="span8">
-          <ul class="breadcrumb notop">
-            <li><a href="#">Home</a><span class="divider">/</span></li>
-            <li class="active">Pricing table</li>
-          </ul>
+        <div id="packForm">
+
         </div>
-      </div>
-    </div>
+        </center>
+      </form>
 
-  </section>
-
-  <section id="maincontent">
-    <div class="container">
-      <div class="row">
-        <div class="span12">
-          <h3>Nos Pack</h3>
-          <div class="row">
-            <div class="span4">
-              <div class="priceBox">
-                <h4 class="light">PACK KTOBTI</h4>
-                <img src="assets/img/packs/image site 1.png" alt="">
-                <hr>
-                <span class="emphasis">A Partir de 6.6 TND <em>+Prix de livraison</em></span>
-                <hr>
-                <span>Pack de Manuels Scolaires</span>
-                <hr>
-                <span>Tous les Niveau du:  <br><b>1er Année Primaire</b> <br>jusqu'au<br> <b>Bac</b></span>
-                <hr>
-                <span>Choisir Votre Option et Section </span>
-                <hr>
-                <hr>
-                <span class="emphasis-2"><a class="btn btn-large btn-color btn-rounded" href="#">Order</a></span>
-              </div>
-            </div>
-            <div class="span4">
-              <div class="priceBox">
-                <h4 class="light">PACK KTOBTI Extra</h4>
-                <img src="assets/img/packs/image site web 2.png" alt="">
-                <hr>
-                <span class="emphasis">A partir de 8dt<em>+Prix de livraison</em></span>
-                <hr>
-                <span>Pack KTOBTI <br>+<br> Fouriniture Scolaire</span>
-                <hr>
-                <span>Un ensemble de cahiers selon votre choix</span>
-                <hr>
-
-                <hr>
-                <span class="emphasis-2"><a class="btn btn-large btn-color btn-rounded" href="#">Order</a></span>
-              </div>
-            </div>
-            <div class="span4">
-              <div class="priceBox special">
-                <h4 class="light">PACK CARTABTI</h4>
-                <img src="assets/img/packs/image site 3.png" alt="">
-                <hr>
-                <span class="emphasis">A partir de 58dt <em><b>+Livraison Gratuite</b></em></span>
-                <hr>
-                <span>Pack KTOBTI Extra <br>+<br> Un cartable  </span>
-                <hr>
-                <span>Cartable Orhopédique</span>
-                <hr>
-                <span class="emphasis-2"><a class="btn btn-large btn-color btn-rounded" href="#">Order</a></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
   <!-- Footer
@@ -194,7 +140,6 @@
     </div>
   </footer>
 
-
   <script src="assets/js/jquery.js"></script>
   <script src="assets/js/modernizr.js"></script>
   <script src="assets/js/jquery.easing.1.3.js"></script>
@@ -212,6 +157,7 @@
 
   <!-- Template Custom Javascript File -->
   <script src="assets/js/custom.js"></script>
+  <script type="text/javascript" src="order.js"></script>
 
 </body>
 
